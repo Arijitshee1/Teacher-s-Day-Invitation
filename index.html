@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teacher's Day Invitation | Supreme Knowledge Foundation</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+  <div class="scene">
+    <div class="stars" id="stars"></div>
+    <div class="aurora aurora-a"></div>
+    <div class="aurora aurora-b"></div>
+    <div class="ribbon ribbon-a"></div>
+    <div class="ribbon ribbon-b"></div>
+    <div class="gold-moon"></div>
+
+    <header class="brand">
+      <div class="eyebrow">WELCOME TO</div>
+      <h1>SUPREME KNOWLEDGE FOUNDATION</h1>
+      <div class="tagline">Tomorrow, Created Today</div>
+    </header>
+
+    <main>
+      <section class="envelope-stage" id="stage" aria-label="Interactive invitation">
+        <div class="hint" id="hint">CLICK THE SEAL TO OPEN</div>
+        <div class="opened-message" id="openedMessage">
+          <span class="opened-icon">✦</span>
+          <span class="invited-title">You Are Invited</span>
+          <small class="invited-subtitle">Take a moment… something special is waiting inside</small>
+          <div class="waiting-orb"></div>
+          <div class="reveal-prompt" id="revealPrompt">
+            <b>SCROLL OR CLICK ANYWHERE</b><span class="prompt-action">TO REVEAL</span>
+            <span>✦</span>
+          </div>
+        </div>
+
+        <div class="envelope-wrap" id="envelopeWrap">
+          <!-- Step 1: closed envelope -->
+          <div class="envelope" id="envelope">
+            <div class="envelope-back"></div>
+
+            <!-- Step 2: invitation letter -->
+            <div class="letter" id="letter">
+              <div class="letter-inner">
+                <img src="assets/skf-logo.jpg" alt="SKF logo">
+                <span>A SPECIAL MESSAGE</span>
+                <h2>You are Invited!</h2>
+                <div class="ornament">✦ ─── ❧ ─── ✦</div>
+                <p>Something special has been prepared for the mentors who guide, inspire and shape our future.</p>
+              </div>
+            </div>
+
+            <div class="flap left"></div>
+            <div class="flap right"></div>
+            <div class="flap bottom"></div>
+            <div class="flap top"></div>
+
+            <button class="seal" id="seal" aria-label="Open envelope">
+              <img src="assets/skf-logo.jpg" alt="">
+            </button>
+          </div>
+        </div>
+
+        <div class="step-labels">
+          <div class="step active" id="step1"><b>1</b><span>CLOSED ENVELOPE</span></div>
+          <div class="line"></div>
+          <div class="step" id="step2"><b>2</b><span>YOU ARE INVITED</span></div>
+          <div class="line"></div>
+          <div class="step" id="step3"><b>3</b><span>INVITATION REVEALED</span></div>
+        </div>
+
+        <div class="waiting-panel" id="waitingPanel">
+          <div class="waiting-decoration left">❧</div>
+          <div>
+            <span class="waiting-kicker">A LITTLE SURPRISE AWAITS</span>
+            <h2>For the mentors who make every lesson meaningful.</h2>
+            <p>Open the envelope, pause for the message, then scroll or click to reveal your invitation.</p>
+          </div>
+          <div class="waiting-decoration right">❧</div>
+        </div>
+      </section>
+
+      <!-- Step 3: exact user-provided invitation card -->
+      <section class="reveal" id="reveal" aria-live="polite">
+        <div class="card-heading">TEACHER'S DAY INVITATION</div>
+        <div class="card-shell">
+          <img id="invitationCard" src="assets/invitation-card.png" alt="Teacher's Day Invitation Card">
+        </div>
+        <button class="download" id="download">↓ DOWNLOAD INVITATION</button>
+      </section>
+    </main>
+
+    <div class="interaction-layer" id="interactionLayer" aria-hidden="true">
+      <div class="interaction-card">
+        <span>✦</span>
+        <b>READY TO REVEAL</b>
+        <small>Scroll or click anywhere</small>
+      </div>
+    </div>
+
+    <div class="toast" id="toast">✓ Invitation downloaded</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
